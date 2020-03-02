@@ -31,7 +31,7 @@ if($_SERVER['REQUEST_METHOD'] == 'GET') {
 	<input type="hidden" value="<?php echo $row['aid'] ?>" name="aid">
 	<div class="form-group">
 	<label for="inputTitle" class="sr-only">Post Title</label>
-	<input type="text" id="inputTitle" required autofocus name='title' value="<?php echo $row['title'] ?>">
+	<input type="text" id="inputTitle" required autofocus name='title' value="<?php echo $row['title'] ?>"pattern="[a-zA-Z0-9]+"> <!-- pattern allows the use of lower and upper case and digits, no other special characters. User must enter in the input according to pattern rule-->
 	</div>
 	<div class="form-group">
 	<label for="inputContent" class="sr-only">Post Content</label>
