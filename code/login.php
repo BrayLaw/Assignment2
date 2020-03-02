@@ -60,9 +60,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 <form class="form-signin" action='#' method='POST'>
       <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
       <label for="inputUsername" class="sr-only">Username</label>
-      <input type="text" id="inputUsername" class="form-control" placeholder="Username" required autofocus name='username'>
+      <input type="text" id="inputUsername" class="form-control" placeholder="Username" required autofocus name='username'pattern="[a-zA-Z0-9]+"> <!-- pattern allows the use of lower and upper case and digits, no other special characters. User must enter in the input according to pattern rule-->
       <label for="inputPassword" class="sr-only">Password</label>
-      <input type="password" id="inputPassword" class="form-control" placeholder="Password" required name='password'>
+      <input type="password" id="inputPassword" class="form-control" placeholder="Password" required name='password'pattern="[a-zA-Z0-9]+"> <!-- pattern allows the use of lower and upper case and digits, no other special characters. User must enter in the input according to pattern rule-->
       <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
     </form>
 <br>
